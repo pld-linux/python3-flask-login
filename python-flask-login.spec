@@ -15,7 +15,7 @@ Source0:	https://pypi.python.org/packages/source/F/Flask-Login/Flask-Login-%{ver
 # Source0-md5:	c0a7eaf28623f0aeac4929dc05a7a064
 URL:		https://github.com/maxcountryman/flask-login/
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 %if %{with python2}
 BuildRequires:	python-distribute
 %endif
