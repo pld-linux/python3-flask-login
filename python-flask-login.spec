@@ -7,12 +7,12 @@
 Summary:	Flask-Login provides user session management for Flask
 Summary(pl.UTF-8):	Wsparcie dla zarzadzania sesja uzytkownika w aplikacjach Flask
 Name:		python-%{module}
-Version:	0.2.11
-Release:	5
+Version:	0.4.1
+Release:	1
 License:	MIT
 Group:		Libraries/Python
 Source0:	https://pypi.python.org/packages/source/F/Flask-Login/Flask-Login-%{version}.tar.gz
-# Source0-md5:	c0a7eaf28623f0aeac4929dc05a7a064
+# Source0-md5:	25b34c74bd509792f291c16e184225df
 URL:		https://github.com/maxcountryman/flask-login/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.710
@@ -84,8 +84,8 @@ rm -rf $RPM_BUILD_ROOT
 %if %{with python2}
 %files
 %defattr(644,root,root,755)
-%doc README.markdown LICENSE
-%{py_sitescriptdir}/flask_login.py[co]
+%doc README.md LICENSE
+%{py_sitescriptdir}/flask_login
 %if "%{py_ver}" > "2.4"
 %{py_sitescriptdir}/Flask_Login-%{version}-py*.egg-info
 %endif
@@ -94,9 +94,8 @@ rm -rf $RPM_BUILD_ROOT
 %if %{with python3}
 %files -n python3-%{module}
 %defattr(644,root,root,755)
-%doc README.markdown LICENSE
-%{py3_sitescriptdir}/flask_login.py
-%{py3_sitescriptdir}/__pycache__/flask_login.*.py[co]
+%doc README.md LICENSE
+%{py3_sitescriptdir}/flask_login
 %{py3_sitescriptdir}/Flask_Login-%{version}-py*.egg-info
 %endif
 
