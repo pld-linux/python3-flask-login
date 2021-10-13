@@ -7,12 +7,12 @@
 Summary:	Flask-Login provides user session management for Flask
 Summary(pl.UTF-8):	Wsparcie dla zarzadzania sesja uzytkownika w aplikacjach Flask
 Name:		python-%{module}
-Version:	0.4.1
-Release:	3
+Version:	0.5.0
+Release:	1
 License:	MIT
 Group:		Libraries/Python
 Source0:	https://pypi.python.org/packages/source/F/Flask-Login/Flask-Login-%{version}.tar.gz
-# Source0-md5:	25b34c74bd509792f291c16e184225df
+# Source0-md5:	a2d94aa6ae935345ebc68eb3cbb5fccd
 URL:		https://github.com/maxcountryman/flask-login/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.710
