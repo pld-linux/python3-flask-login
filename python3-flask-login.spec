@@ -8,7 +8,7 @@ Summary:	Flask-Login provides user session management for Flask
 Summary(pl.UTF-8):	Obsługa zarządzania sesją użytkownika w aplikacjach Flask
 Name:		python3-%{module}
 Version:	0.6.3
-Release:	2
+Release:	3
 License:	MIT
 Group:		Libraries/Python
 Source0:	https://files.pythonhosted.org/packages/source/F/Flask-Login/Flask-Login-%{version}.tar.gz
